@@ -40,8 +40,8 @@ void dijkstra(int graph[V][V], int src) {
         sptSet[u] = true;
 
         for (int j = 0; j < V; j++) {
-            if (!sptSet[j] && graph[u][j] && dist[u] != INF && dist[u] + graph[u][v] < dist[v])
-                dist[v] = dist[u] + graph[u][v];
+            if (!sptSet[j] && graph[u][j] && dist[u] != INF && dist[u] + graph[u][j] < dist[j])
+                dist[j] = dist[u] + graph[u][j];
         }
     }
 
