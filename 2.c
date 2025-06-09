@@ -16,15 +16,13 @@ int main() {
   int no_edge = 0;  
   int selected[V];  
   int total_cost = 0;
-  selected[0] = true;
-
   int x, y;
 
   
   for (int i = 0; i < V; i++) {
     selected[i] = false;
   }
-
+  selected[0] = true;
   printf("Edge : Weight\n");
 
   while (no_edge < V - 1) {
